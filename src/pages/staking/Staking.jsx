@@ -4,7 +4,7 @@ import DreamWeave from "./DreamWeave";
 import StackedItems from "./StackedItems";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import BG from "../../assets/backgrounds/Pearl_Texture_2(Loop).mp4";
+import BG from "../../assets/backgrounds/Pearl_Texture_2(Loop).webm";
 
 const Staking = () => {
   // bring to top
@@ -19,7 +19,7 @@ const Staking = () => {
         <video
           className="min-w-full min-h-full absolute object-cover"
           src={BG}
-          type="video/mp4"
+          type="video/webm"
           autoPlay
           muted
           loop

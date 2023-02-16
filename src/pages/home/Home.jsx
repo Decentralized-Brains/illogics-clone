@@ -4,8 +4,8 @@ import Marquee from "./MarqueeText";
 import ShowcaseProducts from "./ShowcaseProducts";
 import BoxNavbar from "./BoxNavbar";
 import Social from "../../components/Social";
-import BG1 from "../../assets/backgrounds/Pearl_Texture_2(Loop).mp4";
-import BG2 from "../../assets/backgrounds/Ribbon_1(Loop).mp4";
+import BG1 from "../../assets/backgrounds/Pearl_Texture_2(Loop).webm";
+import BG2 from "../../assets/backgrounds/Ribbon_1(Loop).webm";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
           <video
             className="min-w-full min-h-full absolute object-cover"
             src={BG1}
-            type="video/mp4"
+            type="video/webm"
             autoPlay
             muted
             loop
@@ -34,7 +34,7 @@ const Home = () => {
           <video
             className="min-w-full min-h-full absolute object-cover"
             src={BG2}
-            type="video/mp4"
+            type="video/webm"
             autoPlay
             muted
             loop

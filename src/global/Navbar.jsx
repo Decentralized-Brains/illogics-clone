@@ -55,7 +55,7 @@ const Navbar = () => {
                 key={id}
                 className="cursor-pointer capitalize hover:scale-105 duration-200 font-bold"
               >
-                <NavLink to={link} smooth duration={500}>
+                <NavLink to={link} duration={500}>
                   <img src={img} alt="" className="w-14 h-14" />
                 </NavLink>
               </nav>
@@ -84,12 +84,7 @@ const Navbar = () => {
               key={id}
               className="mx-4 my-4 cursor-pointer capitalize text-white"
             >
-              <NavLink
-                onClick={() => setNav(!nav)}
-                to={link}
-                smooth
-                duration={500}
-              >
+              <NavLink onClick={() => setNav(!nav)} to={link} duration={500}>
                 <img src={img} alt="" className="w-14 h-14" />
               </NavLink>
             </nav>
