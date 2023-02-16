@@ -6,7 +6,7 @@ import BoxCard from "./pages/home/BoxCard.jsx";
 import PillCubes from "./pages/home/PillCubesCard.jsx";
 import DapeCard from "./pages/home/DapeCard.jsx";
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

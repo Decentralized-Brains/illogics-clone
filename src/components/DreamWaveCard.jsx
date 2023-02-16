@@ -10,7 +10,7 @@ const DreamWaveCard = () => {
           return (
             <div
               key={item.id}
-              className="w-[297px] h-[377px] border border-gray-400 rounded-lg p-2 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+              className=" w-[297px] h-[377px] border border-gray-400 rounded-lg p-2 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
             >
               <div className="w-[279px] h-[287px] mx-auto rounded-lg">
                 <img
@@ -20,8 +20,10 @@ const DreamWaveCard = () => {
                 />
               </div>
               <div className="flex justify-between items-center pt-[25px]">
-                <span className="text-[24px] font-semibold">LOREM#3478</span>
-                <span className="text-[16px] font-medium">0.357 E</span>
+                <span className="text-lg font-bold md:font-extrabold">
+                  LOREM#3478
+                </span>
+                <span className="text-sm font-medium">0.357 E</span>
               </div>
             </div>
           );

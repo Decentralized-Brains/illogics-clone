@@ -6,7 +6,7 @@ function DropdownMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative ">
+    <div className="relative z-10">
       <div className="flex justify-between items-center md:w-40 border p-1 md:p-3 rounded bg-[#A5A5A5] bg-opacity-10">
         <span className="font-medium text-base text-white hidden md:flex">
           Newest

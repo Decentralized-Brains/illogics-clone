@@ -1,10 +1,9 @@
 import React from "react";
-import SCimg from "../../assets/hero-card/h_card_1.png";
 import { ShowCaseProductsData } from "../../data/Data";
 
 const ShowcaseProducts = () => {
   return (
-    <div className="mainpage">
+    <div>
       <div className="container my-24">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-20">
           {ShowCaseProductsData.map((item) => {
@@ -19,7 +18,7 @@ const ShowcaseProducts = () => {
                   className="w-56 h-40 rounded-lg transform -translate-y-12 mx-auto object-cover"
                 />
                 <div className="flex flex-col items-center transform -translate-y-8">
-                  <h1 className="text-2xl font-bold text-[#011D54]">
+                  <h1 className="text-xl font-bold text-[#011D54]">
                     {item.title}
                   </h1>
                   <span className="text-[#011D54]">{item.price}</span>

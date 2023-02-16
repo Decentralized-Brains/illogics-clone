@@ -64,20 +64,21 @@ const LatestCard = () => {
     ],
   };
   return (
-    <div className="mt-24 ml-10 md:ml-5">
+    <div className="pt-24 container">
       <Slider
         prevArrow={<PreviousArrow />}
         nextArrow={<NextArrow />}
         {...settings}
+        className="pl-8 sm:pl-0"
       >
         <div>
-          <div className="h-80 lg:h-[23.5rem] w-60 md:w-64 lg:w-72 border-2 border-black rounded-lg flex flex-col gap-y-10 lg:gap-y-14 p-4 lg:p-10">
+          <div className=" h-80 lg:h-[23.5rem] w-60 md:w-64 lg:w-72 border-2 border-black rounded-lg flex flex-col gap-y-10 lg:gap-y-14 p-4 lg:p-10">
             <div className="flex flex-col gap-y-4">
-              <h1 className="text-4xl font-extrabold">NEW & IMPROVED</h1>
+              <h1 className="text-2xl font-extrabold">NEW & IMPROVED</h1>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <button className="bg-black text-[#96CED8] px-3 py-1 text-sm rounded-lg">
+              <button className="bg-black text-[#96CED8] px-3 py-1 text-xs rounded-lg">
                 GETTING STARTED GUIDE
               </button>
               <div>
@@ -100,10 +101,10 @@ const LatestCard = () => {
                   />
                 </div>
                 <div className="flex justify-around items-center">
-                  <h1 className="text-xl lg:text-2xl font-extrabold">
+                  <h1 className="text-sm md:text-base font-bold md:font-extrabold">
                     {item.title}
                   </h1>
-                  <p>{item.price}</p>
+                  <p className="text-xs">{item.price}</p>
                 </div>
               </div>
             </div>

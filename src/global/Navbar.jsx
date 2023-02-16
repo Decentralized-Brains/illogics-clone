@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaDiscord, FaTwitter, FaInstagram, FaTelegram } from "react-icons/fa";
-import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
+import Home from "../assets/icons/DreamWave.png";
+import Staking from "../assets/icons/SteakStation.png";
+import Invootoory from "../assets/icons/DreamStore.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,18 +13,13 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "/",
-      name: "Home",
+      link: "staking",
+      img: Staking,
     },
     {
       id: 2,
-      link: "staking",
-      name: "Staking",
-    },
-    {
-      id: 3,
       link: "invootoory",
-      name: "Invootoory",
+      img: Invootoory,
     },
   ];
 
@@ -48,16 +45,18 @@ const Navbar = () => {
         {/* this is for large screen devices */}
         <div className="flex justify-between items-center h-[70px] container mx-auto px-2 md:px-0">
           <div className="flex items-center">
-            <h1 className=" text-3xl font-bold">DreamWave</h1>
+            <NavLink to="/">
+              <img src={Home} alt="" className="w-24 h-24" />
+            </NavLink>
           </div>
-          <ul className="hidden md:flex justify-around items-center">
-            {links.map(({ id, link, name }) => (
+          <ul className="hidden md:flex justify-around items-center gap-x-16">
+            {links.map(({ id, link, img }) => (
               <nav
                 key={id}
-                className="cursor-pointer capitalize hover:scale-105 duration-200 px-3 lg:px-8 font-bold"
+                className="cursor-pointer capitalize hover:scale-105 duration-200 font-bold"
               >
                 <NavLink to={link} smooth duration={500}>
-                  {name}
+                  <img src={img} alt="" className="w-14 h-14" />
                 </NavLink>
               </nav>
             ))}
@@ -79,9 +78,8 @@ const Navbar = () => {
             : "fixed h-screen left-[-100%] w-[80%] top-0 ease-in duration-500 backdrop-blur-lg z-40"
         }
       >
-        <ul>
-          <h1 className="mx-2 my-4 text-3xl font-bold">DreamWave</h1>
-          {links.map(({ id, link, name }) => (
+        <ul className="mt-20">
+          {links.map(({ id, link, img }) => (
             <nav
               key={id}
               className="mx-4 my-4 cursor-pointer capitalize text-white"
@@ -92,7 +90,7 @@ const Navbar = () => {
                 smooth
                 duration={500}
               >
-                {name}
+                <img src={img} alt="" className="w-14 h-14" />
               </NavLink>
             </nav>
           ))}

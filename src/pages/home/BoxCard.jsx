@@ -22,14 +22,14 @@ const BoxCard = () => {
     });
   }
   return (
-    <div className="bg-[#1E242B] py-12">
+    <div className=" my-12">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 place-items-center gap-10">
           {BoxCardData.map((item) => {
             return (
               <div
                 key={item.id}
-                className="w-[305px] h-[413px] bg-[#96CED8] bg-opacity-10 rounded-lg p-2.5 flex flex-col gap-y-4 group realtive overflow-hidden"
+                className="w-[305px] h-[413px] backdrop-blur-xl bg-white/30 rounded-lg p-2.5 flex flex-col gap-y-4 group realtive"
               >
                 <div className="w-[289px] h-[256px] overflow-hidden rounded-lg">
                   <img
@@ -39,8 +39,8 @@ const BoxCard = () => {
                   />
                 </div>
                 <span
-                  className="group-hover:-translate-y-8 group-hover:z-10 duration-500
-                  absolute transform translate-x-8 -z-10 px-4 rounded-lg py-2 animate-text bg-gradient-to-r from-[#D9D1AE] via-[#96CED8] to-[#CAACC8]"
+                  className="group-hover:-translate-y-8 group-hover:z-100 duration-500 text-xs
+                  absolute transform translate-x-5 -z-10 px-4 rounded-lg py-2 animate-text bg-gradient-to-r from-[#D9D1AE] via-[#96CED8] to-[#CAACC8]"
                 >
                   Expiverse (DTC) (9 Spots)
                 </span>
@@ -52,7 +52,7 @@ const BoxCard = () => {
                   <div className="text-white">{item.price}</div>
                 </div>
                 <div>
-                  <div className="flex justify-between items-center text-white text-sm ">
+                  <div className="flex justify-between items-center text-white text-sm">
                     <div>Max Purchase: {item.purchase}</div>
                     <div>{item.stockleft} left</div>
                   </div>
