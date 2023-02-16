@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import Home from "../assets/icons/DreamWave.png";
 import Staking from "../assets/icons/SteakStation.png";
 import Invootoory from "../assets/icons/DreamStore.png";
+import Economy from "../assets/icons/Economy.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,8 +19,13 @@ const Navbar = () => {
     },
     {
       id: 2,
-      link: "invootoory",
+      link: "inventory",
       img: Invootoory,
+    },
+    {
+      id: 3,
+      link: "economy",
+      img: Economy,
     },
   ];
 
@@ -49,7 +55,7 @@ const Navbar = () => {
               <img src={Home} alt="" className="w-24 h-24" />
             </NavLink>
           </div>
-          <ul className="hidden md:flex justify-around items-center gap-x-16">
+          <ul className="hidden md:flex justify-around items-center gap-x-12">
             {links.map(({ id, link, img }) => (
               <nav
                 key={id}

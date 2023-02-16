@@ -71,24 +71,6 @@ const LatestCard = () => {
         {...settings}
         className="pl-8 sm:pl-0"
       >
-        <div>
-          <div className=" h-80 lg:h-[23.5rem] w-60 md:w-64 lg:w-72 border-2 border-black rounded-lg flex flex-col gap-y-10 lg:gap-y-14 p-4 lg:p-10">
-            <div className="flex flex-col gap-y-4">
-              <h1 className="text-2xl font-extrabold">NEW & IMPROVED</h1>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div className="flex flex-col gap-y-4">
-              <button className="bg-black text-[#96CED8] px-3 py-1 text-xs rounded-lg">
-                GETTING STARTED GUIDE
-              </button>
-              <div>
-                <button className="text-black rounded-lg border border-black text-xs px-3 py-1 flex">
-                  EXPLORE
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
         {HeroCardData.map((item) => {
           return (
             <div key={item.id}>

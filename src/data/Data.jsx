@@ -154,3 +154,45 @@ export const ShowCaseProductsData = [
     price: "10.00$",
   },
 ];
+
+export const EconomyTopBoxData = [
+  {
+    id: 1,
+    number: 1,
+    title: "SG",
+  },
+  {
+    id: 2,
+    number: 5,
+    title: "SG",
+    claim: "claim",
+  },
+  {
+    id: 3,
+    number: 0,
+    title: "SG",
+    wrap: "wrap",
+  },
+  {
+    id: 4,
+    number: 13,
+    title: "SG",
+  },
+  {
+    id: 5,
+    number: 1,
+    title: "SG",
+  },
+  {
+    id: 6,
+    number: 5,
+    title: "SG",
+    claim: "claim",
+  },
+  {
+    id: 7,
+    number: 0,
+    title: "SG",
+    wrap: "wrap",
+  },
+];

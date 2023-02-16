@@ -29,7 +29,7 @@ const BoxCard = () => {
             return (
               <div
                 key={item.id}
-                className="w-[305px] h-[413px] backdrop-blur-xl bg-white/30 rounded-lg p-2.5 flex flex-col gap-y-4 group realtive"
+                className="w-[305px] h-[413px] backdrop-blur-sm bg-white/10 rounded-lg p-2.5 flex flex-col gap-y-4 group realtive"
               >
                 <div className="w-[289px] h-[256px] overflow-hidden rounded-lg">
                   <img

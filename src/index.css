@@ -22,6 +22,7 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+  background-color: #1e242b;
 }
 
 .video-docker video {

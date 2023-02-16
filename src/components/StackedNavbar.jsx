@@ -3,7 +3,7 @@ import React from "react";
 const StackedNavbar = () => {
   return (
     <div className="flex justify-between items-center">
-      <div className="text-base sm:text-lg md:text-[40px] font-extrabold z-10">
+      <div className="text-base sm:text-lg md:text-[40px] font-extrabold z-10 text-white">
         Steaks(0)
       </div>
 

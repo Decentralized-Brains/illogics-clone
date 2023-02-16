@@ -19,10 +19,12 @@ const StackedCard = () => {
                 />
               </div>
               <div className="flex justify-between items-center pt-[25px]">
-                <span className="text-lg font-bold md:font-extrabold">
+                <span className="text-lg font-bold md:font-extrabold text-gray-400">
                   LOREM#3478
                 </span>
-                <span className="text-sm font-medium">0.357 E</span>
+                <span className="text-sm font-medium text-gray-600">
+                  0.357 E
+                </span>
               </div>
             </div>
           );
