@@ -4,7 +4,7 @@ import { HeroCardData } from "../../data/Data";
 const InventoryCard = () => {
   return (
     <div>
-      <h1 className="text-4xl text-white">Dream Store</h1>
+      <h1 className="text-4xl text-white">Your Pills</h1>
 
       {/* card */}
 

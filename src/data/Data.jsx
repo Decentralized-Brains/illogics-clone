@@ -72,28 +72,24 @@ export const BoxCardData = [
   },
 ];
 
+import Deedcoin from "../assets/icons/deedcoin.png";
+
 export const StockingTopBoxData = [
   {
     id: 1,
     number: 1,
-    title: "SG",
+    img: Deedcoin,
   },
   {
     id: 2,
     number: 5,
-    title: "SG",
+    img: Deedcoin,
     claim: "claim",
   },
   {
     id: 3,
-    number: 0,
-    title: "SG",
-    wrap: "wrap",
-  },
-  {
-    id: 4,
     number: 13,
-    title: "SG",
+    img: Deedcoin,
   },
 ];
 
@@ -159,40 +155,36 @@ export const EconomyTopBoxData = [
   {
     id: 1,
     number: 1,
-    title: "SG",
+    img: Deedcoin,
   },
   {
     id: 2,
     number: 5,
-    title: "SG",
-    claim: "claim",
+    img: Deedcoin,
   },
   {
     id: 3,
     number: 0,
-    title: "SG",
-    wrap: "wrap",
+    img: Deedcoin,
   },
   {
     id: 4,
     number: 13,
-    title: "SG",
+    img: Deedcoin,
   },
   {
     id: 5,
     number: 1,
-    title: "SG",
+    img: Deedcoin,
   },
   {
     id: 6,
     number: 5,
-    title: "SG",
-    claim: "claim",
+    img: Deedcoin,
   },
   {
     id: 7,
     number: 0,
-    title: "SG",
-    wrap: "wrap",
+    img: Deedcoin,
   },
 ];

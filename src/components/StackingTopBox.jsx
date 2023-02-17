@@ -3,7 +3,7 @@ import { StockingTopBoxData } from "../data/Data.jsx";
 
 const StackingTopBox = () => {
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center my-[50px]">
+    <div className="max-w-4xl grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3  place-items-center my-[50px] mx-auto">
       {StockingTopBoxData.map((item) => {
         return (
           <div
@@ -12,9 +12,7 @@ const StackingTopBox = () => {
           >
             <div className="flex items-center  justify-between">
               <div className="flex items-center gap-2">
-                <span className="animate-text bg-gradient-to-r from-[#0879EB] to-[#B70EA6] rounded-[100%] h-10 w-10 flex items-center justify-center text-white">
-                  {item.title}
-                </span>
+                <img src={item.img} alt="" className="w-10 h-10 object-cover" />
                 <span className="text-2xl font-extrabold pl-2">
                   {item.number}
                 </span>

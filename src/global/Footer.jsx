@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex text-white gap-10 sm:gap-28 flex-row sm:justify-center pl-5 sm:pl-0">
+          <div className="flex text-white gap-5 sm:gap-28 flex-row sm:justify-center pl-5 sm:pl-0">
             <div>
               <span className="text-[#D0DAF5]"> Product</span>
               <ul className="flex flex-col gap-1 pt-5 ">

@@ -7,6 +7,7 @@ import PillCubes from "./pages/home/PillCubesCard.jsx";
 import DapeCard from "./pages/home/DapeCard.jsx";
 import Economy from "./pages/economy/Economy.jsx";
 import Inventory from "./pages/invootoory/Inventory.jsx";
+import GoToTop from "./components/GoToTop.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -14,16 +15,17 @@ function App() {
   return (
     <div>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />}>
           <Route index element={<BoxCard />} />
-          <Route path="boxcard" element={<BoxCard />} />
+          <Route path="pillboxes" element={<BoxCard />} />
           <Route path="pillcubes" element={<PillCubes />} />
-          <Route path="dapecard" element={<DapeCard />} />
+          <Route path="pillgarbs" element={<DapeCard />} />
         </Route>
-        <Route path="staking" element={<Staking />} />
-        <Route path="economy" element={<Economy />} />
-        <Route path="inventory" element={<Inventory />} />
+        <Route path="steakstation" element={<Staking />} />
+        <Route path="dreamstate" element={<Economy />} />
+        <Route path="pills" element={<Inventory />} />
       </Routes>
       <Footer />
     </div>

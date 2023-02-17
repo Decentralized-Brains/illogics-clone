@@ -6,8 +6,8 @@ const BoxNavbar = () => {
   const BoxNav = [
     {
       id: 1,
-      name: "BoosBox",
-      path: "/boxcard",
+      name: "PillBoxes",
+      path: "/pillboxes",
     },
     {
       id: 2,
@@ -16,8 +16,8 @@ const BoxNavbar = () => {
     },
     {
       id: 3,
-      name: "DAPE",
-      path: "/dapecard",
+      name: "PillGarbs",
+      path: "/pillgarbs",
     },
   ];
 

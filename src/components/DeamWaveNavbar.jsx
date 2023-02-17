@@ -4,7 +4,7 @@ const DeamWaveNavbar = () => {
   return (
     <div className="flex justify-between items-center">
       <div className="text-base sm:text-lg md:text-[40px] font-extrabold z-10">
-        Inventony
+        Your DWOOBZ
       </div>
       <div className="z-10 text-xs md:text-[20px] text-gray-600 font-normal md:font-bold flex gap-2 md:gap-4 items-center">
         <div>ALL</div>

@@ -29,13 +29,13 @@ const BoxCard = () => {
             return (
               <div
                 key={item.id}
-                className="w-[305px] h-[413px] backdrop-blur-sm bg-white/10 rounded-lg p-2.5 flex flex-col gap-y-4 group realtive"
+                className="w-[305px] h-[413px] backdrop-blur-sm bg-white/10 rounded-lg p-2 flex flex-col gap-y-4 group realtive"
               >
-                <div className="w-[289px] h-[256px] overflow-hidden rounded-lg">
+                <div className="w-[289px] h-[256px] overflow-hidden rounded-lg mx-auto">
                   <img
                     src={item.img}
                     alt=""
-                    className="w-[289px] h-[256px] mx-auto object-cover rounded-lg hover:scale-110 duration-500"
+                    className="w-[289px] h-[256px] object-cover rounded-lg hover:scale-110 duration-500"
                   />
                 </div>
                 <span

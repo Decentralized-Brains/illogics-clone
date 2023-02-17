@@ -14,17 +14,17 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "staking",
+      link: "steakstation",
       img: Staking,
     },
     {
       id: 2,
-      link: "inventory",
+      link: "pills",
       img: Invootoory,
     },
     {
       id: 3,
-      link: "economy",
+      link: "dreamstate",
       img: Economy,
     },
   ];
