@@ -4,7 +4,7 @@ import { HeroCardData } from "../../data/Data";
 const InventoryCard = () => {
   return (
     <div>
-      <h1 className="text-4xl text-white">Your Pills</h1>
+      <h1 className="text-4xl text-black">Your Pills</h1>
 
       {/* card */}
 
@@ -24,10 +24,10 @@ const InventoryCard = () => {
                   />
                 </div>
                 <div className="flex justify-between items-center pt-[25px]">
-                  <span className="text-lg font-bold md:font-extrabold text-gray-400">
+                  <span className="text-lg font-bold md:font-extrabold text-black">
                     LOREM#3478
                   </span>
-                  <span className="text-sm font-medium text-gray-600">
+                  <span className="text-sm font-medium text-black">
                     0.357 E
                   </span>
                 </div>

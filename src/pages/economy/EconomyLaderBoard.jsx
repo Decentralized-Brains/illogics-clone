@@ -3,12 +3,12 @@ import React from "react";
 const EconomyLaderBoard = () => {
   return (
     <div className="my-10">
-      <h1 className="text-4xl text-white my-10">Leaderboard</h1>
+      <h1 className="text-4xl text-black my-10">Leaderboard</h1>
 
       {/* Table */}
 
       <div class="relative overflow-x-auto">
-        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 bg-opacity-10">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" class="px-4 py-3">
